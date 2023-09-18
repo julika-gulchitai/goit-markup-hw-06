@@ -19,6 +19,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--SLATE);
   background-color: var(--WHITE);
+
   text-decoration: none;
   list-style: none;
 }
@@ -75,6 +76,7 @@ body {
   font-weight: 400;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02 em;
+  font-style: normal;
   text-decoration: none;
 }
 
@@ -93,6 +95,7 @@ body {
   font-weight: 400;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02 em;
+  font-style: normal;
   text-decoration: none;
 }
 
@@ -110,10 +113,10 @@ body {
   background-color: var(--CLOUD);
   font-family: "Roboto", sans-serif;
   font-size: 16 px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04 em;
+  font-style: normal;
   cursor: pointer;
 }
 
@@ -131,8 +134,8 @@ body {
   color: var(--SLATE);
   font-family: "Roboto", sans-serif;
   font-size: 16 px;
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02 em;
 }
@@ -141,8 +144,8 @@ body {
   color: var(--NAVY-BLUE);
   font-family: Roboto;
   font-size: 20 px;
-  font-style: normal;
   font-weight: 500;
+  font-style: normal;
   line-height: 1.2; /* 120% */
   letter-spacing: 0.02 em;
 }
@@ -155,12 +158,12 @@ footer {
   color: var(--CLOUD);
   font-family: "Roboto", sans-serif;
   font-size: 16 px;
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.03 em;
 }
 
 .span-logo-footer {
-  color: var(--WHITE);
+  color: var(--CLOUD);
 }
