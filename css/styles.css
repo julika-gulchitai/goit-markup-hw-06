@@ -1,0 +1,125 @@
+:root {
+  --NAVY-BLUE: #2e2f42;
+  --WHITE: #ffffff;
+  --SLATE: #434455;
+  --CLOUD: #f4f4fd;
+  --IRIS: #4d5ae5;
+  --CORNFLOWER: #e7e9fc;
+  --OCEAN: #404bbf;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--SLATE);
+  background-color: var(--WHITE);
+  text-decoration: none;
+  list-style: none;
+}
+
+.navigation {
+  color: var(--NAVY-BLUE);
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
+
+.span-logo {
+  color: var(--IRIS);
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 21px; /* 116.667% */
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.logo-style {
+  color: var(--NAVY-BLUE);
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 21px; /* 116.667% */
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.contact-email {
+  color: var(--SLATE);
+
+  /* Body */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+  text-decoration: none;
+}
+
+.contact-phone {
+  color: var(--SLATE);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+  text-decoration: none;
+}
+
+.btn {
+  color: var(--IRIS, #4d5ae5);
+  text-align: center;
+  background: var(--CLOUD);
+  /* Button Text */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+.btn:hover {
+  color: var(--WHITE);
+  background: var(--OCEAN);
+}
+
+.link-project {
+  color: var(--SLATE);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
+
+footer {
+  background: var(--NAVY-BLUE);
+}
+
+.p-footer {
+  color: var(--CLOUD);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
+
+.logo-footer {
+  color: var(--WHITE);
+}
