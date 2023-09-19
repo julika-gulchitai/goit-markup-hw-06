@@ -70,7 +70,7 @@ body {
 .contacts-list {
 }
 
-.contact-postal {
+.contact-link {
   color: var(--SLATE);
   font-size: 16px;
   font-weight: 400;
@@ -78,21 +78,8 @@ body {
   letter-spacing: 0.02em;
 }
 
-.contact-postal:hover,
-.contact-postal:focus {
-  color: var(--OCEAN);
-}
-
-.contact-phone {
-  color: var(--SLATE);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-
-.contact-phone:hover,
-.contact-phone:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--OCEAN);
 }
 
@@ -119,7 +106,7 @@ body {
 .btn-order:hover,
 .btn-order:focus {
   color: var(--WHITE);
-  background-color: var(--IRIS);
+  background-color: var(--OCEAN);
 }
 
 /* Benefits section */
@@ -182,9 +169,9 @@ body {
   text-transform: capitalize;
 }
 .team-list {
-  background-color: var(--WHITE);
 }
 .team-item {
+  background-color: var(--WHITE);
 }
 .team-portrait {
 }
