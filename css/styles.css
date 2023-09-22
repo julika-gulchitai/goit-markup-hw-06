@@ -105,12 +105,12 @@ body {
 
 .navigation-container {
   display: flex;
+  align-items: center;
 }
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  align-items: center;
 }
 
 .header {
@@ -366,12 +366,14 @@ body {
   height: 48px;
   min-width: 69px;
   padding: 12px 24px;
+  border: 1px solid var(--CORNFLOWER);
 }
 
 .btn-portfolio:hover,
 .btn-portfolio:focus {
   color: var(--WHITE);
   background-color: var(--OCEAN);
+  border: 1px solid transparent;
 }
 
 .projects-lists {
@@ -414,12 +416,9 @@ body {
 
 .footer {
   background-color: var(--NAVY-BLUE);
-  padding-top: 101.5px;
-  padding-bottom: 100px 0;
+  padding: 100px 0;
 }
 .footer-container {
-  display: block;
-  margin-top: 20;
 }
 
 .footer .logo-style {
