@@ -135,6 +135,18 @@ body {
 
 .navigation-item {
   position: relative;
+  color: var(--OCEAN);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: var(--OCEAN);
+  border-radius: 2px;
 }
 
 .nav-list {
@@ -187,7 +199,7 @@ body {
 .hero {
 }
 
-.hero .container {
+.hero-container {
   padding-top: 188px;
   padding-bottom: 188px;
   background: var(--NAVY-BLUE);
@@ -456,8 +468,6 @@ body {
   /* border-radius: 4px;
   border: 1px solid var(--LIGHT-SLATE); */
   flex-shrink: 0;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link {
@@ -469,6 +479,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-link-icon {
@@ -514,6 +526,10 @@ body {
   padding: 12px 24px;
   border: 1px solid var(--CORNFLOWER);
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-portfolio:hover,
@@ -521,6 +537,8 @@ body {
   color: var(--WHITE);
   background-color: var(--OCEAN);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .projects-list {
@@ -533,10 +551,22 @@ body {
 .projects-item {
   background-color: var(--WHITE);
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-item-link {
   display: block;
+}
+
+.projects-item-link:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.projects-item-link:hover > .project-link {
+  transform: translateY(0%);
+}
+.projects-item-link:focus > .project-link {
+  transform: translateY(0%);
 }
 
 .project-link {
@@ -560,6 +590,26 @@ body {
   padding: 32px 16px;
   border: 1px solid var(--CORNFLOWER);
   border-top: none;
+}
+
+.projects-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-image-text {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--CLOUD);
+  padding: 40px 32px;
+  background-color: var(--IRIS);
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Footer */
@@ -595,7 +645,9 @@ body {
 .span-logo-footer {
   color: var(--CLOUD);
 }
-
+.footer .card-social {
+  gap: 16px;
+}
 .footer-social-text {
   color: var(--WHITE);
   font-size: 16px;
@@ -610,13 +662,38 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-link {
+.footer .card-social-link:hover,
+.footer .card-social-link:focus {
+  background-color: #31d0aa;
 }
 
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
+.footer-social-link {
 }
+.footer-social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+  display: block;
+  width: cal((100% - 72px)/4);
+  flex-shrink: 0;
+}
+
+/* .footer-social-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: var(--IRIS);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+} */
 
 /* Modal  */
 .backdrop {
@@ -631,6 +708,7 @@ body {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -662,6 +740,7 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--CORNFLOWER);
+  background-color: var(--CORNFLOWER);
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
@@ -670,8 +749,12 @@ body {
 }
 
 .modal-close:hover {
-  background-color: var(--OCEAN);
+  background-color: #404bbf;
   border: none;
+}
+
+.modal-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon:hover,
