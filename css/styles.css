@@ -138,16 +138,6 @@ body {
   color: var(--OCEAN);
 }
 
-/* .navigation-item::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  height: 4px;
-  background-color: var(--OCEAN);
-  border-radius: 2px;
-} */
-
 .nav-list {
   position: relative;
   color: var(--OCEAN);
