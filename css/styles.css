@@ -168,7 +168,6 @@ body {
   width: 100%;
   background-color: var(--OCEAN);
   border-radius: 2px;
-  z-index: 1;
   color: var(--OCEAN);
 }
 
@@ -237,7 +236,6 @@ body {
 }
 
 .btn-order {
-  display: inline-block;
   color: var(--WHITE);
   background-color: var(--IRIS);
   font-family: var(--font-main);
@@ -246,6 +244,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  display: block;
   margin: 48px auto 0;
   width: 169px;
   height: 56px;
@@ -435,7 +434,7 @@ body {
 }
 
 .social-link {
-  padding: 32px 0;
+  padding-bottom: 32px;
 }
 
 .social-link-icon {
