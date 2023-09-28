@@ -135,11 +135,11 @@ body {
 
 .navigation-item {
   position: relative;
-  color: var(--OCEAN);
 }
 
 .nav-list {
   position: relative;
+  color: var(--OCEAN);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
