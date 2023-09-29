@@ -721,6 +721,9 @@ body {
 .email {
   width: 264px;
   height: 40px;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   padding: 8px 16px;
   border-radius: 4px;
   border: 1px solid var(--WHITE);
@@ -739,7 +742,7 @@ body {
 }
 
 .btn-subscribe {
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   padding: 8px 24px;
   border-radius: 4px;
@@ -749,10 +752,18 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
+
+.footer-email {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
 .footer-subscribe-block {
 }
 
@@ -838,7 +849,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.02px;
+  letter-spacing: 0.02em;
   margin-bottom: 16px;
   display: block;
 }
@@ -875,6 +886,9 @@ body {
   margin-bottom: 8px;
 }
 
+.modal-comment {
+  margin-bottom: 16px;
+}
 .modal-icon-form {
   fill: var(--NAVY-BLUE);
 }
@@ -897,7 +911,7 @@ body {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.17;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.4em;
   display: block;
   margin-bottom: 4px;
 }
@@ -953,7 +967,7 @@ textarea {
 }
 
 .modal-agreement {
-  /* color: var(--LIGHT-SLATE); */
+  color: var(--LIGHT-SLATE);
   display: block;
   font-size: 12px;
   font-weight: 400;
@@ -993,7 +1007,12 @@ textarea {
 }
 
 .modal-agreement-input:checked + .modal-agreement .modal-checkbox {
-  background-color: var(--OCEAN);
+  fill: var(--CLOUD);
+  border: none;
+}
+
+.modal-agreement-input:checked + .modal-agreement .modal-checkbox {
+  color: var(--OCEAN);
   border: none;
 }
 
