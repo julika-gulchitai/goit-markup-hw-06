@@ -703,6 +703,7 @@ body {
 
 .footer-form {
   display: flex;
+  gap: 24px;
 }
 
 .footer-subscribe-text {
