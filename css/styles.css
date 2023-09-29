@@ -768,6 +768,7 @@ body {
 }
 
 .footer-icon {
+  margin-bottom: 16px;
   fill: var(--WHITE);
 }
 
@@ -911,7 +912,7 @@ body {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.17;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.04em;
   display: block;
   margin-bottom: 4px;
 }
@@ -1009,6 +1010,7 @@ textarea {
 .modal-agreement-input:checked + .modal-agreement .modal-checkbox {
   fill: var(--CLOUD);
   border: none;
+  background-color: var(--OCEAN);
 }
 
 .modal-agreement-input:checked + .modal-agreement .modal-checkbox {
@@ -1023,4 +1025,7 @@ textarea {
 
 .modal-agreement-input {
   appearance: none;
+}
+
+.modal-agreement-link {
 }
