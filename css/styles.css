@@ -866,8 +866,11 @@ body {
   background-color: var(--OCEAN);
 }
 
-.modal-field {
+.modal-box {
+  margin-bottom: 8px;
   position: relative;
+}
+.modal-field {
   border-radius: 4px;
   margin-bottom: 8px;
 }
