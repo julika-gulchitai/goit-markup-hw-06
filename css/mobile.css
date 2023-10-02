@@ -753,20 +753,33 @@ textarea {
 .modal-agreement-link {
   color: var(--IRIS);
 }
-
 .menu-container {
-  padding: 80px 60px 40px 40px;
+  padding: 80px 35px 40px 40px;
   position: absolute;
   top: 20px;
   right: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 428px;
+  height: 796px;
   background-color: var(--WHITE);
-  outline: solid green;
-
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
+.menu-info {
+  margin-bottom: 284px;
+}
+.menu-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
- .menu-toggle {
+.contacts-item-mob {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.menu-toggle-close {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -784,10 +797,10 @@ textarea {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #434455;
- }
+}
 
-.menu-toggle:hover,
-.menu-toggle:focus {
+.menu-toggle-close:hover,
+.menu-toggle-close:focus {
   fill: var(--WHITE);
   background-color: var(--IRIS);
   border: none;
@@ -797,8 +810,8 @@ textarea {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close .modal-icon:hover,
-.modal-close .modal-icon:focus {
+.menu-toggle-close .modal-icon:hover,
+.menu-toggle-close .modal-icon:focus {
   fill: var(--WHITE);
 }
 
@@ -807,13 +820,43 @@ textarea {
   flex-direction: column;
   gap: 40px;
 }
+
 .mobile-menu-link {
+  width: 100%;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--NAVY-BLUE);
   text-transform: capitalize;
+}
+
+.current {
+  color: var(--OCEAN);
+}
+.menu-social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-tel-mob {
+  color: var(--IRIS);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  width: 100%;
+  display: block;
+}
+
+.contacts-mail-mob {
+  color: var(--SLATE);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2px;
+  letter-spacing: 0.02em;
+  display: block;
 }
 
 @media screen and (min-width: 428px) {
