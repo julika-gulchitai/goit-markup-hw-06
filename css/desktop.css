@@ -181,6 +181,7 @@
     padding-bottom: 120px;
   }
   .doing-title {
+    display: block;
     color: var(--NAVY-BLUE);
     text-align: center;
     font-size: 36px;
