@@ -192,9 +192,11 @@
   .footer-social-text {
     text-align: left;
   }
-  .footer-social-text {
-    text-align: left;
+
+  .footer-social {
+    justify-content: flex-start;
   }
+
   .footer-subscribe-text {
     text-align: left;
   }
@@ -209,5 +211,9 @@
 
   .menu-container {
     display: none;
+  }
+
+  .modal {
+    width: 408px;
   }
 }
