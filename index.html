@@ -63,7 +63,7 @@
             </li>
           </ul>
         </address>
-        <button class="menu toggleMenu js-open-menu" type="button">
+        <button class="menu js-open-menu" type="button" data-menu-open>
           <svg class="menu-icon" width="32" height="22">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -736,62 +736,80 @@
     </div>
 
     <!-- Mobile menu -->
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg class="menu-toggle-icon" width="28" height="28">
-          <use href="./images/icons.svg#icon-menu-close"></use>
+    <div
+      class="menu-container js-menu-container is-hidden"
+      id="mobile-menu"
+      data-menu
+    >
+      <button class="menu-toggle js-close-menu" data-menu-close>
+        <!-- <button type="button" class="menu-toggle" data-modal-close> -->
+        <svg class="modal-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
 
       <ul class="mobile-menu list">
         <li class="mobile-menu-item">
-          <a class="mobile-menu-link link" href="">Home</a>
+          <a class="mobile-menu-link link current" href="#">Studio</a>
         </li>
         <li class="mobile-menu-item">
-          <a class="mobile-menu-link link" href="">How it’s made?</a>
+          <a class="mobile-menu-link link" href="#">Portfolio</a>
         </li>
         <li class="mobile-menu-item">
-          <a class="mobile-menu-link link" href="">Chocolate is loved</a>
+          <a class="mobile-menu-link link" href="#">Contacts</a>
         </li>
       </ul>
 
-      <ul class="mobile-socials socials list">
-        <li class="socials-item">
+      <ul class="footer-social list">
+        <li class="footer-social-item">
           <a
-            class="socials-link link"
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook link"
-          >
-            <svg class="socials-icon" width="24" height="24">
-              <use href="./images/icons.svg#facebook-hdr"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="socials-item">
-          <a
-            class="socials-link link"
+            class="link card-social-link"
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Instagram link"
+            aria-label="icon-instagram"
           >
-            <svg class="socials-icon" width="24" height="24">
-              <use href="./images/icons.svg#instagram-hdr"></use>
+            <svg class="social-link-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
-        <li class="socials-item">
+        <li class="footer-social-item">
           <a
-            class="socials-link link"
+            class="link card-social-link"
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Twitter link"
+            aria-label="icon-twitter"
           >
-            <svg class="socials-icon" width="24" height="24">
-              <use href="./images/icons.svg#twitter-hdr"></use>
+            <svg class="social-link-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a
+            class="link card-social-link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="icon-facebook"
+          >
+            <svg class="social-link-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a
+            class="link card-social-link"
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="icon-linkedin"
+          >
+            <svg class="social-link-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
             </svg>
           </a>
         </li>

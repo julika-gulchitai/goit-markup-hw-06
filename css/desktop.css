@@ -266,7 +266,6 @@
     padding: 100px 0 100px;
     flex-direction: row;
     gap: 0 0;
-    /* justify-content: space-between; */
   }
 
   .footer-info {
@@ -281,6 +280,5 @@
     width: 208px;
   }
   .footer-social-link {
-    /* margin: 0 80px 0 120px; */
   }
 }
