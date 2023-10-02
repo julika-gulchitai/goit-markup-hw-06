@@ -1,6 +1,5 @@
 .container {
   width: 100%;
-  outline: solid red;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -73,6 +72,7 @@
 .menu-icon {
   stroke: var(--NAVY-BLUE);
 }
+
 /* Hero */
 .hero {
 }
@@ -753,6 +753,7 @@ textarea {
 .modal-agreement-link {
   color: var(--IRIS);
 }
+
 .menu-container {
   padding: 80px 35px 40px 40px;
   position: absolute;
@@ -779,6 +780,7 @@ textarea {
   flex-direction: column;
   gap: 40px;
 }
+
 .menu-toggle-close {
   position: absolute;
   top: 24px;
@@ -899,5 +901,3 @@ textarea {
     display: none;
   }
 }
-
-/* Our Team */
