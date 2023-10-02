@@ -204,6 +204,7 @@
   }
   /* Our Team */
   .team {
+    background: var(--CLOUD);
   }
 
   .team-container {
