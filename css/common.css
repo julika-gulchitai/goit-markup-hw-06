@@ -1,0 +1,82 @@
+:root {
+  --WHITE: #ffffff;
+  --CLOUD: #f4f4fd;
+  --CORNFLOWER: #e7e9fc;
+  --DAIRY: #fcfcfc;
+  --LIGHT-SLATE: #8e8f99;
+  --SLATE: #434455;
+  --IRIS: #4d5ae5;
+  --OCEAN: #404bbf;
+  --NAVY-BLUE: #2e2f42;
+  --GREEN: #31d0aa;
+
+  --font-main: "Roboto", sans-serif;
+  --font-logo: "Raleway", sans-serif;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+body {
+  color: var(--SLATE);
+  background-color: var(--WHITE);
+  font-family: var(--font-main);
+}
+
+.list {
+  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  display: block;
+  text-align: center;
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  margin: 0 auto;
+}
