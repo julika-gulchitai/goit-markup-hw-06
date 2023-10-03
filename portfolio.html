@@ -17,6 +17,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -24,20 +30,17 @@
     <!--Header-->
     <header class="header">
       <div class="header-container container">
-        <!--Navigation-->
         <nav class="navigation">
-          <!--Logo-->
-          <a class="logo-style link" href="./index.html">
+          <a class="logo link" href="./index.html">
             Web<span class="logo-span">Studio</span>
           </a>
-
           <ul class="navigation-list list">
-            <li class="navigation-item .header-hover">
+            <li class="navigation-item">
               <a class="link nav-list" href="./index.html">Studio</a>
             </li>
             <li class="navigation-item">
               <a
-                class="link nav-list nav-list-acs underline"
+                class="link nav-list underline nav-list-acs"
                 href="./portfolio.html"
                 >Portfolio</a
               >
@@ -48,9 +51,8 @@
           </ul>
         </nav>
 
-        <!--Contacts-->
         <address class="address-contacts">
-          <ul class="contacts-list list container">
+          <ul class="contacts-list list">
             <li class="contacts-item">
               <a class="contact-link link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -63,6 +65,11 @@
             </li>
           </ul>
         </address>
+        <button class="menu js-open-menu" type="button" data-menu-open>
+          <svg class="menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
