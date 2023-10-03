@@ -184,7 +184,9 @@
   /* Doing */
   .doing {
     padding-bottom: 120px;
+    display: block;
   }
+
   .doing-title {
     display: block;
     color: var(--NAVY-BLUE);
@@ -239,8 +241,9 @@
 
   /* Customers section */
   .customers {
-    padding: 0;
+    padding: 120px 0;
   }
+
   .customers-item {
     --items: 6;
     --indent: 24px;
@@ -248,7 +251,6 @@
   }
   .customers-list {
     width: 100%;
-    gap: 24px;
     justify-content: space-between;
   }
 

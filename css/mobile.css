@@ -24,6 +24,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .logo {
   color: var(--IRIS);
@@ -289,7 +290,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 72px 16px;
 }
 
 .customers-item {
@@ -757,10 +758,13 @@ textarea {
 }
 
 .menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 80px 35px 40px 40px;
   position: fixed;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   top: 0;
   right: 0;
   background-color: var(--WHITE);
@@ -770,7 +774,6 @@ textarea {
 }
 
 .menu-info {
-  margin-bottom: 284px;
 }
 .menu-contact-info {
   display: flex;
@@ -841,7 +844,7 @@ textarea {
 }
 .menu-social {
   display: flex;
-  justify-content: space-between;
+  gap: 56px;
 }
 
 .contacts-tel-mob {
