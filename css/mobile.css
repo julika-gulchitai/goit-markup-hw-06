@@ -844,7 +844,7 @@ textarea {
 }
 .menu-social {
   display: flex;
-  gap: 56px;
+  justify-content: space-between;
 }
 
 .contacts-tel-mob {
