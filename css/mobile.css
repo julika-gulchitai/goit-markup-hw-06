@@ -3,8 +3,8 @@
   max-width: 428px;
   margin: 0 auto;
   padding: 0 16px;
-  outline: solid red;
 }
+
 .current {
   color: var(--NAVY-BLUE);
 }
@@ -67,8 +67,6 @@
   background-color: transparent;
   border: none;
   margin: 0 0 0 auto;
-  /* min-width: 32px;
-  min-height: 22px; */
 }
 .menu-icon {
   stroke: var(--NAVY-BLUE);
@@ -343,7 +341,7 @@
   gap: 72px;
 }
 .footer-box {
-  /* width: 100%; */
+  width: 100%;
 }
 
 .footer-info {
@@ -381,7 +379,7 @@
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  width: 264px;
+  max-width: 264px;
   text-align: center;
   margin-bottom: 18px;
 }
@@ -517,9 +515,8 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%) scale(1);
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  /* width: 392px; */
+  width: calc(100% - 20px);
   max-width: 408px;
-
   min-height: 584px;
   align-items: center;
   background: var(--DAIRY);
@@ -764,13 +761,12 @@ textarea {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  /* width: 428px;
-  height: 796px; */
+  top: 0;
+  right: 0;
   background-color: var(--WHITE);
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-  overflow: hidden;
 }
 
 .menu-info {
@@ -884,41 +880,13 @@ textarea {
   .contacts-list {
     display: none;
   }
+
   /* Hero section */
   .hero {
   }
-  /* .hero-title {
-    color: var(--WHITE);
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    max-width: 320px;
-    min-height: 80px;
-    text-transform: capitalize;
-    margin: 0 auto 72px;
-  }
-  .btn-order {
-    color: var(--WHITE);
-    background-color: var(--IRIS);
-    border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  } */
-
-  /* Benefits */
-  /* .benefits {
-    padding: 96px 0;
-  }
-  .benefits-icon {
-    display: none;
-  }
-  @media screen and (max-width: 427px) {
-    .email {
-      max-width: 398px;
-    }
-  } */
 
   .email {
-    width: 398px;
+    max-width: 398px;
+    width: 100%;
   }
 }
