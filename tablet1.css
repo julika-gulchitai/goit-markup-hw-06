@@ -5,8 +5,8 @@
   /* Header */
   .header {
     border-bottom: 1px solid var(--CORNFLOWER);
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
+      0 1px 1px rgba(46, 47, 66, 0.16), 0 1px 6px rgba(46, 47, 66, 0.08);
   }
 
   .header-container {
@@ -133,8 +133,11 @@
   }
   /* Benefits */
   .benefits {
+    padding: 96px 0;
   }
-
+  .benefits-icon {
+    display: none;
+  }
   .benefits-list {
     display: flex;
     flex-wrap: wrap;
@@ -142,9 +145,7 @@
     gap: 72px 24px;
   }
   .benefits-item {
-    --items: 2;
-    --indent: 24px;
-    width: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+    width: calc((100% - 24px) / 2);
   }
 
   .benefits-title {
@@ -164,11 +165,13 @@
     justify-content: center;
   }
 
+  .team-item {
+    width: calc((100% - 24px) / 2);
+  }
+
   /* Customers section */
   .customers-item {
-    --items: 3;
-    --indent: 24px;
-    width: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+    width: calc((100% - 120px) / 3);
   }
   .customers-list {
     width: 552px;
@@ -181,7 +184,7 @@
 
   /* Footer */
   .footer {
-    padding: 98px 0 90px;
+    padding: 98px 0 90px 108px;
   }
 
   .footer-container {
@@ -190,20 +193,17 @@
     justify-content: left;
     gap: 72px 24px;
     align-items: flex-start;
-    padding-left: 108px;
   }
 
-  .footer .logo {
+  .footer .logo-style {
     text-align: left;
   }
   .footer-social-text {
     text-align: left;
   }
-
-  .footer-social {
-    justify-content: flex-start;
+  .footer-social-text {
+    text-align: left;
   }
-
   .footer-subscribe-text {
     text-align: left;
   }
@@ -216,10 +216,11 @@
     margin-right: 24px;
   }
 
-  .menu-container {
-    display: none;
-  }
   .btn-subscribe {
     margin: 0;
+  }
+
+  .menu-container {
+    display: none;
   }
 }

@@ -1,14 +1,13 @@
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
-    padding: 0 15px;
   }
 
   /* Header */
   .header {
     border-bottom: 1px solid var(--CORNFLOWER);
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
+      0 1px 1px rgba(46, 47, 66, 0.16), 0 1px 6px rgba(46, 47, 66, 0.08);
   }
 
   .navigation {
@@ -91,14 +90,13 @@
   }
 
   /* Hero section */
-
   .hero {
     padding: 188px 0;
     background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office.jpg);
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
   }
 
   @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
@@ -111,10 +109,6 @@
     }
   }
 
-  .hero-container {
-    padding: 0;
-  }
-
   .hero-title {
     color: var(--WHITE);
     font-size: 56px;
@@ -123,8 +117,8 @@
     letter-spacing: 0.02em;
     max-width: 496px;
     text-transform: capitalize;
+    margin: 0 auto 48px;
   }
-
   .btn-order {
     color: var(--WHITE);
     background-color: var(--IRIS);
@@ -143,9 +137,7 @@
     gap: 24px;
   }
   .benefits-item {
-    --items: 4;
-    --indent: 24px;
-    width: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+    width: calc((100% - 72px) / 4);
   }
 
   .benefits-icon {
@@ -204,21 +196,16 @@
   }
 
   .doing-item {
-    --items: 3;
-    --indent: 24px;
-    --width-row: calc(
-      (100% - var(--indent) * (var(--items) - 1)) / var(--items)
-    );
-    border: 1px solid var(--CORNFLOWER);
+    width: calc((100% - 48px) / 3);
+    border: 1px solid var(--CORNFLOWER, #e7e9fc);
   }
-
   /* Our Team */
   .team {
     background: var(--CLOUD);
-    padding: 120px 0;
   }
 
-  .team-container {
+  .team {
+    padding: 120px 0;
   }
   .team-list {
     display: flex;
@@ -228,23 +215,18 @@
   .team-item {
     max-width: 264px;
     height: 428px;
-    --items: 4;
-    --indent: 24px;
-    width: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    width: calc((100% - 72px) / 4);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16),
+      0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
-
   /* Customers section */
   .customers {
     padding: 0;
   }
   .customers-item {
-    --items: 6;
-    --indent: 24px;
-    width: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+    width: calc((100% - 120px) / 6);
   }
   .customers-list {
     width: 100%;
@@ -255,26 +237,26 @@
   /* Footer */
   .footer {
     background-color: var(--NAVY-BLUE);
-    padding: 101px 0 100px;
   }
 
-  .footer-container {
+  .footer {
+    padding: 100px 0 100px;
+    flex-direction: row;
+    gap: 0 0;
+  }
+
+  .footer-container{
     flex-wrap: nowrap;
-    gap: 0;
   }
 
   .footer-info {
     display: block;
-    margin-right: 0;
+    margin-right: 120px;
   }
 
   .footer-social {
     width: 208px;
   }
   .footer-social-link {
-    margin-left: 120px;
-  }
-  .footer-box {
-    margin-left: auto;
   }
 }

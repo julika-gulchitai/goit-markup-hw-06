@@ -9,9 +9,13 @@
   --OCEAN: #404bbf;
   --NAVY-BLUE: #2e2f42;
   --GREEN: #31d0aa;
+  --NAVY-BLUE-modal: rgba(46, 47, 66, 0.4);
 
   --font-main: "Roboto", sans-serif;
   --font-logo: "Raleway", sans-serif;
+  --items: 1;
+  --indent: 24px;
+  --width-row: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 ul,
